@@ -1,0 +1,8 @@
+This is the readme for examcounterprojekt.
+It reads a file and prints the remaining time to the terminal so other programms can use the output. Example: Mate Command Applet displays what a script prints.
+
+File format for dates:
+Name;JJJJ-MM-DD HH-MM-SS
+
+File name is hardcoded to examdates, could be changed in the files. 
+
