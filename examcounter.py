@@ -25,5 +25,6 @@ for j in listofexamdates:
 	a,b = j
 	output +=a + ":"
 	output += " [" + str(b).split(" ")[0] + "d"
-	output += str(b)[9:11] + "h] " #11: h 14: m 17: s
+	output += str(b).split(":")[1] + "h"
+	output += "] "
 print output
