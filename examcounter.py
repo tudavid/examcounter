@@ -22,8 +22,9 @@ listofexamdates.sort(key=lambda x: x[1])
 output=" "
 for j in listofexamdates:
 	a,b = j
-	output +=a + ":" + "["
+	output +=a + ":" + " " + "["
 	output += str(b.days) + "d"
 	output += str(b.seconds//3600) + "h"
+	#output += str((td.seconds//60)%60) + "m"
 	output += "] "
 print output
