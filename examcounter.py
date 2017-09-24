@@ -24,11 +24,16 @@ while (datecounter < 6):
     datecounter+=1
 listofexamdates.sort(key=lambda x: x[1])
 output=" "
+date = ""
+maxlength = 100;
 for j in listofexamdates:
 	a,b = j
-	output +=a + ":" + " " + "["
-	output += str(b.days) + "d"
-	output += str(b.seconds//3600) + "h"
+	date +=a + ":" + " " + "["
+	date += str(b.days) + "d"
+	date += str(b.seconds//3600) + "h"
 	#output += str((td.seconds//60)%60) + "m"
-	output += "] "
+	date += "]  "
+	if(len(date) >= maxlength):
+	     break
+	output = date;
 print output
